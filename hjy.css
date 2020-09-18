@@ -36,12 +36,115 @@ body {
   height: 580px;
   /* background: royalblue; */
   float: left;
+  text-align: center;
+  padding: 0 70px;
+  /* outline: none; */
 }
 
+.form h2 {
+  margin-top: 70px;
+  color: #df072d;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.form p {
+  margin-bottom: 15px;
+}
+.form .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 200px; */
+  /* margin-top: 30px; */
+  /* margin-bottom: 15px; */
+  margin: 30px 70px 15px;
+  /* border: 1px solid #df072d; */
+}
+
+.form .social a {
+  /* border: 1px solid #df072d; */
+  /* width: 100px; */
+  /* height: 100px; */
+  font-size: 30px;
+  opacity: 70%;
+  /* display: inline-block; */
+  transition: opacity 0.3s, font-size 0.3s;
+}
+
+.form .social a:hover {
+  opacity: 95%;
+  font-size: 35px;
+  /* color: #05c46b; */
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #808e9b;
+  outline: none;
+  background: #d2dae2;
+}
+
+.input:focus {
+  background: #ffdd59;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.input::placeholder {
+  color: #ffa801;
+}
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.check input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.check a {
+  color: #df072d;
+  text-decoration: underline;
+}
 .photo {
   width: 340px;
   height: 580px;
   background: red;
   float: right;
   border-radius: 0 10px 10px 0;
+  background: url(./images/photo_3.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* outline: none; */
+}
+
+.btn {
+  width: 154px;
+  height: 46px;
+  background: #ff3f34;
+  border-radius: 10px;
+  border: 1px solid #ff3f34;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-line {
+  background: transparent;
+  border: 1px solid #ff3f34;
+  color: #ff3f34;
 }
